@@ -1,4 +1,4 @@
-# # 🍺 Beer Demand Forecasting & Inventory Optimization — East Africa FMCG
+#  🍺 Beer Demand Forecasting & Inventory Optimization — East Africa FMCG
 
 > **A end-to-end supply chain analytics project simulating real-world demand planning and inventory optimization for a beverage company operating across Kenya.**
 
