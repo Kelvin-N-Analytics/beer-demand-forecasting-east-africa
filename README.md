@@ -1,4 +1,4 @@
-#  🍺 Beer Demand Forecasting & Inventory Optimization — East Africa FMCG
+#  🍺 Beer Demand Forecasting & Inventory Optimization  East Africa FMCG
 
 > **A end-to-end supply chain analytics project simulating real-world demand planning and inventory optimization for a beverage company operating across Kenya.**
 
@@ -16,7 +16,7 @@ This project simulates 3 years of beer and spirits sales data across 4 Kenyan re
 
 ## 🎯 Business Questions Answered
 
-1. What does demand look like across regions and products — and when does it spike?
+1. What does demand look like across regions and products  and when does it spike?
 2. How much does running a promotion actually lift sales?
 3. Can we forecast demand more accurately than a simple moving average?
 4. What is the optimal safety stock and reorder point for each SKU?
@@ -50,9 +50,9 @@ This project simulates 3 years of beer and spirits sales data across 4 Kenyan re
 ### 2. Promotion Impact
 - Promotions drive a **+26.6% average uplift in demand** across all SKUs
 - Tusker Lager benefits most due to its high base volume
-- Insight: promotional planning should account for supply chain readiness — a demand spike without pre-positioned stock creates stockouts
+- Insight: promotional planning should account for supply chain readiness  a demand spike without pre-positioned stock creates stockouts
 
-### 3. Demand Forecasting — MA3 vs Exponential Smoothing
+### 3. Demand Forecasting: MA3 vs Exponential Smoothing
 
 | Model | MAPE | Interpretation |
 |---|---|---|
@@ -60,7 +60,7 @@ This project simulates 3 years of beer and spirits sales data across 4 Kenyan re
 | Exponential Smoothing with Trend & Seasonality | **8.17%** | Off by ~8 cases per 100 forecasted |
 | **Improvement** | **47% more accurate** | ETS captures seasonal peaks the MA3 misses |
 
-The Exponential Smoothing model captures December and Easter spikes that the Moving Average consistently underestimates — the exact failure mode that leads to festive season stockouts.
+The Exponential Smoothing model captures December and Easter spikes that the Moving Average consistently underestimates  the exact failure mode that leads to festive season stockouts.
 
 ### 4. Inventory Optimization (Nairobi — 95% Service Level)
 
@@ -86,7 +86,7 @@ The Exponential Smoothing model captures December and Easter spikes that the Mov
 | **Total (Nairobi)** | **KES 718,944** |
 | **Projected (4 Regions)** | **KES ~2,400,000** |
 
-> Johnnie Walker Black delivers the highest saving despite lower volume — because its high unit price (KES 28,000/case) means even small stock reductions have outsized financial impact. **Premium SKUs drive disproportionate holding costs.**
+> Johnnie Walker Black delivers the highest saving despite lower volume  because its high unit price (KES 28,000/case) means even small stock reductions have outsized financial impact. **Premium SKUs drive disproportionate holding costs.**
 
 ### 6. Supplier Performance
 
@@ -100,7 +100,7 @@ The Exponential Smoothing model captures December and Easter spikes that the Mov
 | Senator Keg | 13.8 days | ✅ Reliable |
 
 - All suppliers are within the 14-day benchmark on average
-- **Nairobi has the lowest on-time delivery rate (58.8%)** — the highest-volume region carries the most supplier risk
+- **Nairobi has the lowest on-time delivery rate (58.8%)** - the highest-volume region carries the most supplier risk
 - **Kisumu has the best on-time rate (67.6%)** despite lower volumes
 
 ---
@@ -157,11 +157,11 @@ jupyter notebook "Beer Demand Forecasting & Inventory Optimization.ipynb"
 
 Based on the analysis, a beverage company like EABL or KWAL should:
 
-1. **Replace moving average forecasting with Exponential Smoothing** — the 47% accuracy improvement directly reduces both stockouts and excess inventory
-2. **Pre-position stock 3–4 weeks before December and Easter** — lead times average 14 days, so orders need to go out before the demand spike hits
-3. **Prioritise inventory accuracy for premium SKUs** — Johnnie Walker Black generates the highest holding cost savings per case reduced
-4. **Investigate Nairobi supplier reliability** — the largest market has the lowest on-time delivery rate (58.8%), creating unnecessary supply risk
-5. **Build promotional stock buffers** — with a +26.6% average uplift, promotions without pre-positioning stock risk turning sales opportunities into stockouts
+1. **Replace moving average forecasting with Exponential Smoothing**: the 47% accuracy improvement directly reduces both stockouts and excess inventory
+2. **Pre-position stock 3–4 weeks before December and Easter**: lead times average 14 days, so orders need to go out before the demand spike hits
+3. **Prioritise inventory accuracy for premium SKUs**: Johnnie Walker Black generates the highest holding cost savings per case reduced
+4. **Investigate Nairobi supplier reliability**: the largest market has the lowest on-time delivery rate (58.8%), creating unnecessary supply risk
+5. **Build promotional stock buffers**: with a +26.6% average uplift, promotions without pre-positioning stock risk turning sales opportunities into stockouts
 
 ---
 
